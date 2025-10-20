@@ -1,0 +1,16 @@
+{
+  "name": "FitXperience",
+  "short_name": "FitX",
+  "start_url": "https://fitxperience.app/client/index.html",
+  "display": "standalone",
+  "background_color": "#070b1a",
+  "theme_color": "#0b1739",
+  "icons": [
+    {
+      "src": "/client/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "scope": "https://fitxperience.app/"
+}

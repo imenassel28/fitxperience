@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <link rel="canonical" href="https://fitxperience.app/"/>
+  <meta property="og:url" content="https://fitxperience.app/">
+  <meta property="og:image" content="https://fitxperience.app/client/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>FitXperience — Entrena mejor con IA</title>
+  <meta name="description" content="Entrenador IA + NutriMatch + Retos. Tu fitness en una sola app."/>
+  <meta property="og:title" content="FitXperience — Entrena mejor con IA">
+  <meta property="og:description" content="Rutinas personalizadas, nutrición inteligente y gamificación.">
+  <meta name="theme-color" content="#0b1739">
+  <link rel="icon" href="/client/icon.png"/>
+  <link rel="manifest" href="/client/manifest.json">
+  <link rel="stylesheet" href="/client/styles.css"/>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('/client/service-worker.js'));
+    }
+  </script>
+</head>
+<body class="landing">
+  <header class="hdr">
+    <div class="logo">FX</div>
+    <nav class="nav">
+      <a href="#features">Características</a>
+      <a href="#pricing">Precios</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn" href="/client/index.html#coach">Usar la app</a>
+    </nav>
+  </header>
+
+  <main class="landing-wrap">
+    <section class="hero-lg">
+      <h1>Tu entrenador inteligente: <span>entrena, come y gana</span></h1>
+      <p>Rutinas personalizadas por IA, NutriMatch y retos con ranking. Todo en una sola app.</p>
+      <div class="cta-row">
+        <a class="btn" href="/client/index.html#coach">Empezar gratis</a>
+        <a class="btn ghost" href="#features">Ver cómo funciona</a>
+      </div>
+      <img class="mockup" src="/client/mockup_app.png" alt="FitXperience App">
+    </section>
+
+    <section id="features" class="grid3">
+      <div class="card"><h3>Entrenador IA</h3><p>Meta, minutos y material → bloques listos.</p></div>
+      <div class="card"><h3>NutriMatch</h3><p>Comidas compatibles y macros por kg/día.</p></div>
+      <div class="card"><h3>Retos + Ranking</h3><p>Constancia con puntos, rachas y top global.</p></div>
+    </section>
+
+    <section id="pricing" class="card center">
+      <h2>Precios</h2>
+      <p><b>Gratis</b>: plan básico y retos (con anuncios).</p>
+      <p><b>Premium</b>: 4,99 €/mes — estadísticas, menús completos y sin anuncios.</p>
+      <div class="cta-row"><a class="btn" href="/client/index.html#coach">Probar ahora</a></div>
+    </section>
+
+    <section id="faq" class="grid2">
+      <div class="card"><h3>¿Es seguro?</h3><p>Guía general de entrenamiento/nutrición. No sustituye asesoramiento médico.</p></div>
+      <div class="card"><h3>¿Funciona en móvil?</h3><p>Sí. Es una PWA (instalable). Próximamente App Store / Google Play.</p></div>
+    </section>
+  </main>
+
+  <footer class="ftr">© FitXperience — 2025 · <a href="#">Privacidad</a> · <a href="#">Términos</a></footer>
+</body>
+</html>

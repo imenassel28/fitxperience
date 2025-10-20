@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>FitXperience — App</title>
+  <meta name="theme-color" content="#070b1a">
+  <link rel="manifest" href="/client/manifest.json">
+  <link rel="stylesheet" href="/client/styles.css"/>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('/client/service-worker.js'));
+    }
+  </script>
+</head>
+<body>
+  <header class="hdr">
+    <div class="logo">FX</div>
+    <nav class="nav">
+      <a href="#" data-view="home" class="active">Inicio</a>
+      <a href="#" data-view="coach">Entrenador IA</a>
+      <a href="#" data-view="nutrition">NutriMatch</a>
+      <a href="#" data-view="quests">Retos</a>
+      <a href="#" data-view="leaderboard">Ranking</a>
+      <a href="#" data-view="profile">Perfil</a>
+      <a href="#" data-view="about">Acerca</a>
+    </nav>
+    <div class="actions"><button id="themeBtn">🌓</button></div>
+  </header>
+  <main class="container">
+    <section id="view-home" class="view">
+      <div class="hero"><h1>Entrena mejor. Come mejor. Juega mejor.</h1><p>IA + rutinas personalizadas + NutriMatch + gamificación.</p><button class="btn" data-goto="coach">Empieza ahora</button></div>
+      <div class="grid3"><div class="card"><h3>Rutinas a medida</h3><p>Objetivo, tiempo y material → bloques listos.</p></div><div class="card"><h3>NutriMatch</h3><p>Platos recomendados y macros por kg/día.</p></div><div class="card"><h3>Retos y Ranking</h3><p>Constancia con puntos, rachas y top.</p></div></div>
+    </section>
+    <section id="view-coach" class="view hidden">
+      <div class="grid2">
+        <div class="card"><h2>Entrenador IA</h2>
+          <div class="row"><input id="goal" placeholder="Meta (definición, masa, movilidad)"><select id="level"><option>Principiante</option><option>Intermedio</option><option>Avanzado</option></select><input id="minutes" type="number" min="6" max="90" value="24"></div>
+          <div class="row"><select id="equip"><option value="bodyweight">Peso corporal</option><option value="mancuernas">Mancuernas</option><option value="barra">Barra</option><option value="kettlebell">Kettlebell</option></select><input id="injuries" placeholder="Lesiones (opcional)"><select id="focus"><option value="balanced">Balanceado</option><option value="upper">Superior</option><option value="lower">Piernas</option><option value="core">Core</option></select></div>
+          <button id="btnPlan" class="btn">Crear plan</button><div id="planBox" class="plan"></div>
+        </div>
+        <div class="card"><h2>Asistente</h2><div id="chatBox" class="chat"></div><div class="row"><input id="chatMsg" placeholder="Pregúntame..."><button id="btnChat" class="btn ghost">Enviar</button></div></div>
+      </div>
+    </section>
+    <section id="view-nutrition" class="view hidden"><div class="card"><h2>NutriMatch</h2><div id="mealsBox"></div></div></section>
+    <section id="view-quests" class="view hidden"><div class="card"><h2>Retos diarios</h2><div id="questsBox" class="grid3"></div></div></section>
+    <section id="view-leaderboard" class="view hidden"><div class="card"><h2>Ranking</h2><div id="leaders"></div></div></section>
+    <section id="view-profile" class="view hidden"><div class="grid2"><div class="card"><h2>Tu perfil</h2><label>Nick</label><input id="nick"><button id="saveNick" class="btn">Guardar</button></div><div class="card"><h2>Resumen</h2><div id="summary"></div></div></div></section>
+    <section id="view-about" class="view hidden"><div class="card"><h2>Nichos con demanda</h2><ul><li>Salud mental + fitness</li><li>Dolor lumbar y movilidad</li><li>Nutrición cultural</li><li>Turnos nocturnos</li><li>Postparto</li></ul></div></section>
+  </main>
+  <footer class="ftr">© FitXperience — App</footer>
+  <script src="/client/app.js"></script>
+</body>
+</html>

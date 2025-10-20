@@ -1,0 +1,157 @@
+{
+  "exercises": [
+    {
+      "name": "Burpees explosivos",
+      "tags": [
+        "hiit",
+        "cardio",
+        "core"
+      ],
+      "equip": [
+        "bodyweight"
+      ],
+      "suggested": 6,
+      "video": "https://example.com/burpees"
+    },
+    {
+      "name": "Sentadilla goblet",
+      "tags": [
+        "strength",
+        "legs"
+      ],
+      "equip": [
+        "mancuernas",
+        "kettlebell",
+        "bodyweight"
+      ],
+      "suggested": 8,
+      "video": "https://example.com/goblet"
+    },
+    {
+      "name": "Press de hombros",
+      "tags": [
+        "strength",
+        "push"
+      ],
+      "equip": [
+        "mancuernas",
+        "bodyweight"
+      ],
+      "suggested": 8,
+      "video": "https://example.com/press"
+    },
+    {
+      "name": "Remo inclinado",
+      "tags": [
+        "strength",
+        "pull"
+      ],
+      "equip": [
+        "mancuernas",
+        "barra"
+      ],
+      "suggested": 8,
+      "video": "https://example.com/remo"
+    },
+    {
+      "name": "Zancadas caminando",
+      "tags": [
+        "strength",
+        "legs",
+        "core"
+      ],
+      "equip": [
+        "bodyweight",
+        "mancuernas"
+      ],
+      "suggested": 8,
+      "video": "https://example.com/zancadas"
+    },
+    {
+      "name": "Mountain climbers",
+      "tags": [
+        "hiit",
+        "core"
+      ],
+      "equip": [
+        "bodyweight"
+      ],
+      "suggested": 6,
+      "video": "https://example.com/mc"
+    },
+    {
+      "name": "Salto pliométrico",
+      "tags": [
+        "plyo",
+        "legs"
+      ],
+      "equip": [
+        "bodyweight",
+        "caja"
+      ],
+      "suggested": 6,
+      "video": "https://example.com/plyo"
+    },
+    {
+      "name": "Plancha isométrica",
+      "tags": [
+        "core",
+        "mobility"
+      ],
+      "equip": [
+        "bodyweight"
+      ],
+      "suggested": 6,
+      "video": "https://example.com/plancha"
+    },
+    {
+      "name": "Movilidad caderas",
+      "tags": [
+        "mobility",
+        "balanced"
+      ],
+      "equip": [
+        "bodyweight"
+      ],
+      "suggested": 6,
+      "video": "https://example.com/mobhip"
+    }
+  ],
+  "meals": [
+    {
+      "name": "Bowl de pollo y quinoa",
+      "cal": 620,
+      "protein": 45,
+      "carbs": 60,
+      "fat": 18
+    },
+    {
+      "name": "Tortilla de claras y avena",
+      "cal": 430,
+      "protein": 35,
+      "carbs": 40,
+      "fat": 12
+    },
+    {
+      "name": "Salmón con boniato",
+      "cal": 540,
+      "protein": 38,
+      "carbs": 35,
+      "fat": 22
+    },
+    {
+      "name": "Yogur griego + frutos rojos + nueces",
+      "cal": 380,
+      "protein": 23,
+      "carbs": 28,
+      "fat": 16
+    },
+    {
+      "name": "Poke de atún y arroz",
+      "cal": 560,
+      "protein": 40,
+      "carbs": 65,
+      "fat": 14
+    }
+  ]
+}
